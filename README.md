@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Interactive Rating](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI/hub/responsive-interactive-rating-Byo3BJ_mq)
 - Live Site URL: [Interactive Rating](https://matebeing.github.io/interactive-rating-component-main/)
 
 ## My process
