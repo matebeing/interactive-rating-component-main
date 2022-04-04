@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
 :root {
-
+    --main-bg-color: hsl(216, 12%, 8%);
+    --card-bg-color: hsl(213, 19%, 18%);
+    --softdark-bg-color: hsl(218, 13%, 25%);
+    --primary-color: hsl(25, 97%, 53%);
+    --font-color: hsl(217, 12%, 63%);
 }
 
 
@@ -11,5 +15,126 @@
     box-sizing: border-box;
 }
 
-.attribution { color: #fff; font-size: 11px; text-align: center; }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100vh;
+
+    font-family: 'Overpass', sans-serif;
+    color: var(--font-color);
+
+    background-color: var(--main-bg-color);
+}
+
+.rating-card {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    width: 28%;
+    height: 57%;
+    background-color: var(--card-bg-color);
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    .rating-card {
+        width: 90%;
+    }
+}
+
+#icon-star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: var(--softdark-bg-color);
+}
+
+h2 {
+    color: #fff;
+}
+
+p {
+    font-size: 15px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    list-style: none;
+
+    width: 100%;
+
+}
+
+li {
+    width: 50px;
+    height: 50px;
+}
+
+button {
+    border: none;
+    border-radius: 50px;
+    font-family: inherit;
+}
+li > button {
+    width: 100%;
+    height: 100%;
+
+    color: var(--font-color);
+
+    background-color: var(--softdark-bg-color);
+}
+
+li > button:hover {
+    background-color: rgb(117, 117, 117);
+}
+
+li > button:focus {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#btn-submit {
+    padding: 15px;
+
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    background-color: var(--primary-color);
+}
+
+#btn-submit:hover {
+    color: var(--primary-color);
+    background-color: #fff;
+}
+
+#btn-submit:disabled {
+    background-color: rgb(117, 117, 117);
+}
+
+#btn-submit:disabled:hover {
+    background-color: rgb(117, 117, 117);
+
+    color: #fff;
+}
+
+.attribution { margin-top: 3%; color: #fff; font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
